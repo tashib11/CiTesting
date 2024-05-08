@@ -1,22 +1,22 @@
 package com.example.demouitesting;
 
 public class Circle extends Shape {
-    private double radius;
+    private float radius;
 
-    public Circle(String name, double radius) {
- this.name=name;
+    public Circle( float radius) {
+ this.name="circle";
         this.radius = radius;
     }
 
     @Override
-    public double area() {
-        return Math.PI * radius * radius;
+    public float area() {
+        return (float)3.1416 * radius * radius;
     }
 
     @Override
-    public double perimeter() {
-        return 2 * Math.PI * radius;
+    public float perimeter() {
+        return 2 * (float)3.1416 * radius;
     }
 
-    // Getters and setters for radius
+
 }

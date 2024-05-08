@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/cbtn"
+        android:id="@+id/cId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="cicrle"
@@ -20,38 +20,79 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/sbtn"
+        android:id="@+id/sId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.804"
-        app:layout_constraintStart_toEndOf="@+id/cbtn"
+        app:layout_constraintStart_toEndOf="@+id/cId"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="shape"
+        android:text="text"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <Button
+        android:id="@+id/redIId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="red"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/blueId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blue"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <Button
+        android:id="@+id/tId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="triangle"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <Button
+        android:id="@+id/greenId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="green"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+    <TextView
+        android:id="@+id/areaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="area"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="61dp" />
 
-    <Button
-        android:id="@+id/next"
+    <TextView
+        android:id="@+id/perimeterId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="next"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="perimeter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276" />
+        tools:layout_editor_absoluteY="164dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

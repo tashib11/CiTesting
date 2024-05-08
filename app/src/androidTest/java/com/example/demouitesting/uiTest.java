@@ -2,12 +2,7 @@ package com.example.demouitesting;
 
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
-import android.content.Intent;
-import android.provider.Telephony;
-
 import androidx.test.espresso.Espresso;
-import androidx.test.espresso.ViewAction;
-import androidx.test.espresso.ViewAssertion;
 import androidx.test.espresso.action.ViewActions;
 import androidx.test.espresso.assertion.ViewAssertions;
 import androidx.test.espresso.intent.Intents;
@@ -25,26 +20,83 @@ public class uiTest {
     public ActivityScenarioRule<MainActivity> scenarioRule= new ActivityScenarioRule<>(MainActivity.class);
     @Test
 
-    public  void TestCirclebtn(){
-        Espresso.onView(withId(R.id.cbtn)).perform(ViewActions.click());
-        Espresso.onView(withId(R.id.textView)).check(ViewAssertions.matches(ViewMatchers.withText("circle")));
+    public  void TestCircleName(){
+        Espresso.onView(withId(R.id.cId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.textName)).check(ViewAssertions.matches(ViewMatchers.withText("circle")));
     }
-    @Before
-    public void setUp() {
-        Intents.init();
-    }
+    @Test
 
-    @After
-    public void tearDown() {
-        Intents.release();
+    public  void TestCircleArea(){
+        Espresso.onView(withId(R.id.cId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.areaId)).check(ViewAssertions.matches(ViewMatchers.withText("12.56637")));
+    }
+    @Test
+
+    public  void TestCirclePeri(){
+        Espresso.onView(withId(R.id.cId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.perimeterId)).check(ViewAssertions.matches(ViewMatchers.withText("12.56637")));
+    }
+    @Test
+
+    public  void TestSquareName(){
+        Espresso.onView(withId(R.id.sId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.textName)).check(ViewAssertions.matches(ViewMatchers.withText("square")));
+    }
+    @Test
+
+    public  void TestSquareArea(){
+        Espresso.onView(withId(R.id.sId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.areaId)).check(ViewAssertions.matches(ViewMatchers.withText("4")));
+    }
+    @Test
+
+    public  void TestSquarePeri(){
+        Espresso.onView(withId(R.id.sId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.perimeterId)).check(ViewAssertions.matches(ViewMatchers.withText("8")));
     }
 
     @Test
-    public void testNextButton() {
-        // Perform click on next button
-        Espresso.onView(withId(R.id.next)).perform(ViewActions.click());
 
-        // Verify that MainActivity2 is launched
-        Intents.intended(IntentMatchers.hasComponent(MainActivity2.class.getName()));
+    public  void TestTriName(){
+        Espresso.onView(withId(R.id.tId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.textName)).check(ViewAssertions.matches(ViewMatchers.withText("triangle")));
+    }
+    @Test
+
+    public  void TestTriArea(){
+        Espresso.onView(withId(R.id.tId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.areaId)).check(ViewAssertions.matches(ViewMatchers.withText("6")));
+    }
+    @Test
+
+    public  void TestTriPeri(){
+        Espresso.onView(withId(R.id.tId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.perimeterId)).check(ViewAssertions.matches(ViewMatchers.withText("12")));
+    }
+
+    @Test
+
+    public void redName(){
+        Espresso.onView(withId(R.id.redIId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.textName)).check(ViewAssertions.matches(ViewMatchers.withText("red")));
+    }
+
+    @Test
+
+    public void blueName(){
+        Espresso.onView(withId(R.id.blueId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.textName)).check(ViewAssertions.matches(ViewMatchers.withText("blue")));
+    }
+
+    @Test
+
+    public void greenName(){
+        Espresso.onView(withId(R.id.greenId)).perform(ViewActions.click());
+        Espresso.onView(withId(R.id.textName)).check(ViewAssertions.matches(ViewMatchers.withText("green")));
     }
 }
+
+
+
+
+

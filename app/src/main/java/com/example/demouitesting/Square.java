@@ -1,20 +1,20 @@
 package com.example.demouitesting;
 
 public class Square extends Shape {
-    private double sideLength;
+    private float sideLength;
 
-    public Square(String name, double sideLength) {
-        this.name = name;
+    public Square( float sideLength) {
+        this.name = "square";
         this.sideLength = sideLength;
     }
 
     @Override
-    public double area() {
+    public float area() {
         return sideLength * sideLength;
     }
 
     @Override
-    public double perimeter() {
+    public float perimeter() {
         return 4 * sideLength;
     }
 }

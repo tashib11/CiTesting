@@ -1,7 +1,7 @@
 package com.example.demouitesting;
 
 public abstract  class Shape {
-    String name;
-    public  abstract  double area();
-    public  abstract  double perimeter();
+ public    String name;
+    public  abstract  float area();
+    public  abstract  float perimeter();
 }
